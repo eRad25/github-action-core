@@ -9,5 +9,6 @@ jobs:
               uses: actions/checkout@v4
 
             - name: test job welcome message
-              run: echo "Executing the first job"
+              run: |
+                   echo "Executing the first job"
                    cat README.md
