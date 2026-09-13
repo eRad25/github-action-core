@@ -4,11 +4,10 @@ jobs:
     tets-job:
         runs-on: ubuntu-latest
         steps:
-            - name: test job welcome message
-              run: echo "Executing the first job"
 
             - name: checkout repository
               uses: actions/checkout@v4
 
-            - name: readme file content
-              run: cat README.md
+            - name: test job welcome message
+              run: echo "Executing the first job"
+                   cat README.md
